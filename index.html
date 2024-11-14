@@ -323,6 +323,7 @@ function toggleAbstract() {
 }
 </script>
                   </div>
+                  <br>
                 </li>
 
                 <li>
@@ -341,32 +342,54 @@ function toggleAbstract() {
                         </font>
                       </div>
                       <div class="links abbr">
-                        <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                          href="https://arxiv.org/abs/2409.05356" target="_blank"><i class="fas fa-file" style="color:rgb(203, 9, 164)"></i></a> <a
-                          href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank"><i class="fab fa-github" style="color:rgb(203, 9, 164)"></i></a>
-                      </div>
+                        <!-- Links with Abstract Badge -->
+<div class="links abbr">
+  <a class="abstract badge" role="button" onclick="toggleAbstract2()">
+      <span style="color:rgb(203, 9, 164)">Abstract</span>
+  </a>
+  <a href="https://arxiv.org/abs/2409.05356" target="_blank">
+      <i class="fas fa-file" style="color:rgb(203, 9, 164)"></i>
+  </a>
+  <a href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank">
+      <i class="fab fa-github" style="color:rgb(203, 9, 164)"></i>
+  </a>
+</div>
 
-                      <div class="abstract hidden">
-                        <p style="font-size: 12px;">Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with 
-                          extensive web data produce highly natural-sounding output. However, such data is scarce for Indian 
-                          languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or 
-                          YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural 
-                          conversations collected in low-quality environments to generate high-quality TTS training data. Our 
-                          pipeline leverages the cross-lingual generalization of denoising and speech enhancement models 
-                          trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest 
-                          multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech 
-                          from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets 
-                          like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess 
-                          zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, 
-                          ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained 
-                          model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot 
-                          speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation 
-                          reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, 
-                          which we improve by fine-tuning the model on our data containing diverse set of speakers across language 
-                          families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
-                        </p>
-    
-                      </div>
+<!-- Abstract Content -->
+<div class="abstract hidden" id="abstract-text-2" style="display: none;">
+  <p style="font-size: 12px;">
+      Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with 
+      extensive web data produce highly natural-sounding output. However, such data is scarce for Indian 
+      languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or 
+      YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural 
+      conversations collected in low-quality environments to generate high-quality TTS training data. Our 
+      pipeline leverages the cross-lingual generalization of denoising and speech enhancement models 
+      trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest 
+      multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech 
+      from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets 
+      like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess 
+      zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, 
+      ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained 
+      model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot 
+      speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation 
+      reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, 
+      which we improve by fine-tuning the model on our data containing diverse set of speakers across language 
+      families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
+  </p>
+</div>
+
+<!-- JavaScript to Toggle Abstract Display -->
+<script>
+function toggleAbstract2() {
+  var abstract = document.getElementById("abstract-text-2");
+  if (abstract.style.display === "none") {
+      abstract.style.display = "block";
+  } else {
+      abstract.style.display = "none";
+  }
+}
+</script>
+
                     </div>
                 </li>
 
