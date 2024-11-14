@@ -70,9 +70,9 @@
         <div class="row ml-1 ml-sm-0">
           <span class="contact-icon text-center">
             <a href="mailto:mehaksingal13@gmail.com"><i class="fas fa-envelope" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
-            <a href="https://scholar.google.com/citations?user=_kR4rGAAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
+            <a href="https://scholar.google.com/citations?user=dgpAca8AAAAJ&hl=en" target="_blank" title="Google Scholar" style="color:rgb(203, 9, 164);"><i class="ai ai-google-scholar" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
             <!-- <a href="https://semanticscholar.com/author/" target="_blank" title="Semantic Scholar"><i class="ai ai-semantic-scholar" style="font-size: 1.5em; color: rgb(203, 9, 164);"></i></a> -->
-            <a href="https://github.com/sumanthd17" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
+            <a href="https://github.com/mehak1309" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
             <!-- <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.5em; color: rgb(203, 9, 164);"></i></a> -->
           </span>
 
@@ -128,7 +128,7 @@
 
       <header class="post-header">
         <h1 class="post-title">publications</h1>
-        <p class="desc">Also see <a href="https://scholar.google.com/citations?user=_kR4rGAAAAAJ">Google Scholar</a> 
+        <p class="desc">Also see <a href="https://scholar.google.com/citations?user=dgpAca8AAAAJ&hl=en" style="color:rgb(203, 9, 164);">Google Scholar</a> 
           <!-- <a href="https://semanticscholar.com/author/2072738714">Semantic Scholar</a> -->
         </p>
       </header>
@@ -155,27 +155,31 @@
                     </font>
                   </div>
                   <div class="links abbr">
-                    <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                      href="https://arxiv.org/abs/2410.13394" target="_blank"><i class="fas fa-file"></i></a> <a
-                      href="https://github.com/AI4Bharat/CIA" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="abstract badge" role="button" id="abstract-button">
+                      <span style="color:rgb(203, 9, 164)">Abstract</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2410.13394" target="_blank">
+                      <i class="fas fa-file" style="color:rgb(203, 9, 164)"></i>
+                    </a>
+                    <a href="https://github.com/AI4Bharat/CIA" target="_blank">
+                      <i class="fab fa-github" style="color:rgb(203, 9, 164)"></i>
+                    </a>
                   </div>
-
-                  <div class="abstract hidden">
+                  
+                  <div class="abstract hidden" id="abstract-content">
                     <p>Recent advancements in Text-to-Speech (TTS) technology have led to natural-sounding speech for English, 
                       primarily due to the availability of large-scale, high-quality web data. However, many other languages 
-                      lack access to such resources, relying instead on limited studio-quality data. This scarcity results in 
-                      synthesized speech that often suffers from intelligibility issues, particularly with low-frequency 
-                      character bigrams. In this paper, we propose three solutions to address this challenge. First, we leverage 
-                      high-quality data from linguistically or geographically related languages to improve TTS for the target 
-                      language. Second, we utilize low-quality Automatic Speech Recognition (ASR) data recorded in non-studio 
-                      environments, which is refined using denoising and speech enhancement models. Third, we apply knowledge 
-                      distillation from large-scale models using synthetic data to generate more robust outputs. Our experiments 
-                      with Hindi demonstrate significant reductions in intelligibility issues, as validated by human evaluators. 
-                      We propose this methodology as a viable alternative for languages with limited access to high-quality data, 
-                      enabling them to collectively benefit from shared resources.
                     </p>
                   </div>
-                </div>
+                  
+                  <script>
+                    document.getElementById('abstract-button').addEventListener('click', function() {
+                      var abstractContent = document.getElementById('abstract-content');
+                      // Toggle the 'hidden' class to show/hide the abstract
+                      abstractContent.classList.toggle('hidden');
+                    });
+                  </script>
+                                  </div>
               </li>
 
 
@@ -200,8 +204,8 @@
                   </div>
                   <div class="links abbr">
                     <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                      href="https://arxiv.org/abs/2409.05356" target="_blank"><i class="fas fa-file"></i></a> <a
-                      href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank"><i class="fab fa-github"></i></a>
+                      href="https://arxiv.org/abs/2409.05356" target="_blank" style="color:rgb(203, 9, 164)"><i class="fas fa-file"></i></a> <a
+                      href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank" style="color:rgb(203, 9, 164)"><i class="fab fa-github"></i></a>
                   </div>
 
                   <div class="abstract hidden">
@@ -248,7 +252,7 @@
                   </div>
                   <div class="links abbr">
                     <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                      href="https://arxiv.org/abs/2409.05356" target="_blank"><i class="fas fa-file"></i></a> <a
+                      href="https://arxiv.org/abs/2409.05356" target="_blank" style="color:rgb(203, 9, 164)"><i class="fas fa-file"></i></a> <a
                   </div>
                   <div class="abstract hidden">
                     <p>Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with 
