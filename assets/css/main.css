@@ -1,6 +1,6 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
 /******************************************************************************* Themes */
-:root { --global-bg-color: #ffffff; --global-text-color: #000000; --global-theme-color: #CC5500; --global-theme-color-contrast: #2698BA; --global-theme-color-contrast2: #7bcce4; --global-theme-color-contrast3: #0076df; --global-hover-color: #CC5500; --global-footer-bg-color: #424242; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-icon-color: #424242; }
+:root { --global-bg-color: #ffffff; --global-text-color: #000000; --global-theme-color: #c60fab; --global-theme-color-contrast: #2698BA; --global-theme-color-contrast2: #7bcce4; --global-theme-color-contrast3: #0076df; --global-hover-color: #CC5500; --global-footer-bg-color: #424242; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-icon-color: #424242; }
 
 :root .fa-sun { display: none; }
 
