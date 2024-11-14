@@ -156,20 +156,20 @@
           <p>Hello | నమస్కారం | नमस्ते</p>
 
           <p>I recently completed my undergraduate studies from <a href="https://www.iitm.ac.in">IIT Madras</a>
-            & <a href="http://ai4bharat.iitm.ac.in" target="_blank">AI4Bharat</a>, where I'm advised by <a
-              href="http://www.cse.iitm.ac.in/~miteshk/" target="_blank">Mitesh M. Khapra</a>.
+            & <a href="http://ai4bharat.iitm.ac.in" target="_blank" style="color:rgb(203, 9, 164);">AI4Bharat</a>, where I'm advised by <a
+              href="http://www.cse.iitm.ac.in/~miteshk/" target="_blank" style="color:rgb(203, 9, 164);">Mitesh M. Khapra</a>.
           </p>
           <p>
             My research interests are aligned towards Multilingual Learning for building Language Models, Machine
             Translation and Speech Recognition Models. One of the primary goals of my research is to develop models and
             data for under-resourced languages and make NLP technologies accessible to a much wider audience. Released
-            <a href="https://github.com/AI4Bharat/IndicBERT">IndicTextNorm</a>, <a
-              href="https://github.com/AI4Bharat/indicTrans">Indic-Num2Words</a> as part of these initiatives.          </p>
-          <p>
-            Previously, I studies Product Design and Manufacture from the University of Nottingham, where I did several design projects under the supervision of Professor Richard Tew at University of Nottingham, UK.
+            <a href="https://github.com/AI4Bharat/IndicBERT" style="color:rgb(203, 9, 164);">IndicTextNorm</a>, 
+            <a href="https://github.com/AI4Bharat/indicTrans" style="color:rgb(203, 9, 164);">Indic-Num2Words</a> as part of these initiatives.
+                      <p>
+            Previously, I studied Product Design and Manufacture from the University of Nottingham, where I did several design projects under the supervision of <a href="https://www.nottingham.ac.uk/Engineering/People/r.tew" target="_blank">Prof. Richard Tew</a>. at University of Nottingham, UK.
           </p>
           <p>If you wanna chat about research/academia/whatever, feel free to reach out to <a
-              href="mailto:sumanthd@cse.iitm.ac.in">sumanthd@cse.iitm.ac.in</a></p>
+              href="mailto:21f1006390@ds.study.iitm.ac.in">21f1006390@ds.study.iitm.ac.in</a></p>
 
         </div>
 
@@ -530,52 +530,39 @@
                   <div class="row">
 
                     <div class="col-sm-2 abbr">
-                      <abbr class="badge">ArXiv</abbr>
-                    </div>
+                      <abbr class="badge" style="background-color: rgb(203, 9, 164);">NAACL'25</abbr>
+                  </div>
+                  
 
                     <div id="doddapaneni2024finding" class="col-sm-8">
-                      <div class="title"><b>Cross-Lingual Auto Evaluation for Assessing Multilingual LLMs</b>
+                      <div class="title"><b>ELAICHI: Enhancing Low-resource TTS by Addressing Infrequent and Low-frequency Character Bigrams</b>
                       </div>
                       <div class="author">
                         <font size="-1">
-                          <span style="color:cadetblue">Sumanth
-                            Doddapaneni</span>, Mohammed Safi Ur Rahman Khan, Dilip Venkatesh, Raj Dabre, Anoop
-                          Kunchukuttan, Mitesh M. Khapra
+                          Srija Anand, Praveen Srinivasa Varadhan, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Mitesh Khapra
                         </font>
                       </div>
                       <div class="links abbr">
-                        <a class="abstract badge" role="button"><span style="color:cadetblue">Abstract</span></a> <a
+                        <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
                           href="https://arxiv.org/abs/2410.13394" target="_blank"><i class="fas fa-file"></i></a> <a
                           href="https://github.com/AI4Bharat/CIA" target="_blank"><i class="fab fa-github"></i></a>
                       </div>
 
                       <div class="abstract hidden">
-                        <p>Evaluating machine-generated text remains a significant challenge in NLP, especially for
-                          non-English languages. Current methodologies, including automated metrics, human assessments,
-                          and
-                          LLM-based evaluations, predominantly focus on English, revealing a significant gap in
-                          multilingual
-                          evaluation frameworks. We introduce the Cross Lingual Auto Evaluation (CIA) Suite, an
-                          extensible
-                          framework that includes evaluator LLMs (Hercule) and a novel test set (Recon) specifically
-                          designed for multilingual evaluation. Our test set features 500 human-annotated instructions
-                          spanning various task capabilities along with human judgment scores across six languages. This
-                          would enable benchmarking of general-purpose multilingual LLMs and facilitate meta-evaluation
-                          of
-                          Evaluator LLMs. The proposed model, Hercule, is a cross-lingual evaluation model that
-                          addresses
-                          the scarcity of reference answers in the target language by learning to assign scores to
-                          responses
-                          based on easily available reference answers in English. Our experiments demonstrate that
-                          Hercule
-                          aligns more closely with human judgments compared to proprietary models, demonstrating the
-                          effectiveness of such cross-lingual evaluation in low resource scenarios. Further, it is also
-                          effective in zero-shot evaluation on unseen languages. This study is the first comprehensive
-                          examination of cross-lingual evaluation using LLMs, presenting a scalable and effective
-                          approach
-                          for multilingual assessment. All code, datasets, and models will be publicly available to
-                          enable
-                          further research in this important area.
+                        <p>Recent advancements in Text-to-Speech (TTS) technology have led to natural-sounding 
+                          speech for English, primarily due to the availability of large-scale, high-quality web 
+                          data. However, many other languages lack access to such resources, relying instead on 
+                          limited studio-quality data. This scarcity results in synthesized speech that often 
+                          suffers from intelligibility issues, particularly with low-frequency character bigrams. 
+                          In this paper, we propose three solutions to address this challenge. First, we leverage 
+                          high-quality data from linguistically or geographically related languages to improve TTS 
+                          for the target language. Second, we utilize low-quality Automatic Speech Recognition (ASR) 
+                          data recorded in non-studio environments, which is refined using denoising and speech 
+                          enhancement models. Third, we apply knowledge distillation from large-scale models using 
+                          synthetic data to generate more robust outputs. Our experiments with Hindi demonstrate 
+                          significant reductions in intelligibility issues, as validated by human evaluators. We 
+                          propose this methodology as a viable alternative for languages with limited access to 
+                          high-quality data, enabling them to collectively benefit from shared resources.
                         </p>
                       </div>
                     </div>
@@ -585,7 +572,7 @@
                   <div class="row">
 
                     <div class="col-sm-2 abbr">
-                      <abbr class="badge">EMNLP'24</abbr>
+                      <abbr class="badge" style="background-color: rgb(203, 9, 164);">NEURIPS'24</abbr>
                     </div>
 
                     <div id="doddapaneni2024finding" class="col-sm-8">
@@ -593,96 +580,35 @@
                       </div>
                       <div class="author">
                         <font size="-1">
-                          <span style="color:cadetblue">Sumanth
-                            Doddapaneni</span>, Mohammed Safi Ur Rahman Khan, Sshubam Verma, Mitesh M. Khapra
+                          Ashwin Sankar, Srija Anand, Praveen Srinivasa Varadhan, Sherry Thomas, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Shridhar Kumar, Deovrat Mehendale, Aditi Krishana, Giri Raju, Mitesh Khapra
                         </font>
                       </div>
                       <div class="links abbr">
-                        <a class="abstract badge" role="button"><span style="color:cadetblue">Abstract</span></a> <a
+                        <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
                           href="https://arxiv.org/abs/2406.13439" target="_blank"><i class="fas fa-file"></i></a> <a
                           href="https://github.com/AI4Bharat/FBI" target="_blank"><i class="fab fa-github"></i></a>
                       </div>
 
                       <div class="abstract hidden">
-                        <p>Large Language Models (LLMs) are increasingly relied upon to evaluate text outputs of other
-                          LLMs, thereby influencing leaderboards and development decisions. However, concerns persist
-                          over the accuracy of these assessments and the potential for misleading conclusions. In this
-                          work, we investigate the effectiveness of LLMs as evaluators for text generation tasks. We
-                          propose FBI, a novel framework designed to examine the proficiency of Evaluator LLMs in
-                          assessing four critical abilities in other LLMs: factual accuracy, instruction following,
-                          coherence in long-form writing, and reasoning proficiency. By introducing targeted
-                          perturbations in answers generated by LLMs, that clearly impact one of these key capabilities,
-                          we test whether an Evaluator LLM can detect these quality drops. By creating a total of 2400
-                          perturbed answers covering 22 perturbation categories, we conduct a comprehensive study using
-                          different evaluation strategies on five prominent LLMs commonly used as evaluators in the
-                          literature. Our findings reveal significant shortcomings in current Evaluator LLMs, which
-                          failed to identify quality drops in over 50\% of cases on average. Single-answer and pairwise
-                          evaluations demonstrated notable limitations, whereas reference-based evaluations showed
-                          comparatively better performance. These results underscore the unreliable nature of current
-                          Evaluator LLMs and advocate for cautious implementation in practical applications. Code and
-                          data are available at this https://github.com/AI4Bharat/FBI.
+                        <p>Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with 
+                          extensive web data produce highly natural-sounding output. However, such data is scarce for Indian 
+                          languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or 
+                          YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural 
+                          conversations collected in low-quality environments to generate high-quality TTS training data. Our 
+                          pipeline leverages the cross-lingual generalization of denoising and speech enhancement models 
+                          trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest 
+                          multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech 
+                          from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets 
+                          like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess 
+                          zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, 
+                          ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained 
+                          model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot 
+                          speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation 
+                          reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, 
+                          which we improve by fine-tuning the model on our data containing diverse set of speakers across language 
+                          families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
                         </p>
-                      </div>
-                    </div>
-                </li>
-
-                <li>
-                  <div class="row">
-
-                    <div class="col-sm-2 abbr">
-                      <abbr class="badge">ACL'24</abbr>
-                    </div>
-
-                    <div id="ai4bharat2023indictrans2" class="col-sm-8">
-                      <div class="title"><b>IndicLLMSuite: A Blueprint for Creating Pre-training and Fine-Tuning
-                          Datasets
-                          for Indian Languages</b></div>
-                      <div class="author">
-                        <font size="-1">
-                          Mohammed Safi Ur Rahman Khan, Priyam Mehta, Ananth Sankar, Umashankar Kumaravelan, <span
-                            style="color:cadetblue">Sumanth
-                            Doddapaneni</span>, Suriyaprasaad G, Varun Balan G, Sparsh Jain, Anoop Kunchukuttan,
-                          Pratyush
-                          Kumar, Raj Dabre, Mitesh M. Khapra
-                        </font>
-                      </div>
-                      <div class="links abbr">
-                        <a class="abstract badge" role="button"><span style="color:cadetblue">Abstract</span></a> <a
-                          href="https://arxiv.org/abs/2403.06350" target="_blank"><i class="fas fa-file"></i></a> <a
-                          href="https://github.com/AI4Bharat/IndicLLMSuite" target="_blank"><i
-                            class="fab fa-github"></i></a>
-                        | 🏆 Outstanding Paper
-                      </div>
-
-                      <div class="abstract hidden">
-                        <p>Despite the considerable advancements in English LLMs, the progress in building comparable
-                          models
-                          for other languages has been hindered due to the scarcity of tailored resources. Our work aims
-                          to
-                          bridge this divide by introducing an expansive suite of resources specifically designed for
-                          the
-                          development of Indic LLMs, covering 22 languages, containing a total of 251B tokens and 74.8M
-                          instruction-response pairs. Recognizing the importance of both data quality and quantity, our
-                          approach combines highly curated manually verified data, unverified yet valuable data, and
-                          synthetic data. We build a clean, open-source pipeline for curating pre-training data from
-                          diverse
-                          sources, including websites, PDFs, and videos, incorporating best practices for crawling,
-                          cleaning, flagging, and deduplication. For instruction-fine tuning, we amalgamate existing
-                          Indic
-                          datasets, translate/transliterate English datasets into Indian languages, and utilize LLaMa2
-                          and
-                          Mixtral models to create conversations grounded in articles from Indian Wikipedia and Wikihow.
-                          Additionally, we address toxicity alignment by generating toxic prompts for multiple scenarios
-                          and
-                          then generate non-toxic responses by feeding these toxic prompts to an aligned LLaMa2 model.
-                          We
-                          hope that the datasets, tools, and resources released as a part of this work will not only
-                          propel
-                          the research and development of Indic LLMs but also establish an open-source blueprint for
-                          extending such efforts to other languages. The data and other artifacts created as part of
-                          this
-                          work are released with permissive licenses.
-                        </p>
+    
                       </div>
                     </div>
                 </li>
