@@ -154,22 +154,38 @@
                       Srija Anand, Praveen Srinivasa Varadhan, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Mitesh Khapra
                     </font>
                   </div>
-                  <div class="links abbr">
-                    <a class="abstract badge" role="button" id="abstract-button">
-                      <span style="color:rgb(203, 9, 164)">Abstract</span>
-                    </a>
-                    <a href="https://arxiv.org/abs/2410.17901" target="_blank">
-                      <i class="fas fa-file" style="color:rgb(203, 9, 164)"></i>
-                    </a>
-                    <a href="https://github.com/AI4Bharat/ELAICHI" target="_blank">
-                      <i class="fab fa-github" style="color:rgb(203, 9, 164)"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="abstract hidden" id="abstract-content">
-                    <p style="font-size: 12px;">Recent advancements in Text-to-Speech (TTS) technology have led to natural-sounding speech for English, primarily due to the availability of large-scale, high-quality web data. However, many other languages lack access to such resources, relying instead on limited studio-quality data. This scarcity results in synthesized speech that often suffers from intelligibility issues, particularly with low-frequency character bigrams. In this paper, we propose three solutions to address this challenge. First, we leverage high-quality data from linguistically or geographically related languages to improve TTS for the target language. Second, we utilize low-quality Automatic Speech Recognition (ASR) data recorded in non-studio environments, which is refined using denoising and speech enhancement models. Third, we apply knowledge distillation from large-scale models using synthetic data to generate more robust outputs. Our experiments with Hindi demonstrate significant reductions in intelligibility issues, as validated by human evaluators. We propose this methodology as a viable alternative for languages with limited access to high-quality data, enabling them to collectively benefit from shared resources.
-                    </p>
-                  </div>
+                  <!-- Links with Abstract Badge -->
+                    <div class="links abbr">
+                      <a class="abstract badge" role="button" onclick="toggleAbstract3()">
+                          <span style="color:rgb(203, 9, 164)">Abstract</span>
+                      </a>
+                      <a href="https://arxiv.org/abs/2410.17901" target="_blank">
+                          <i class="fas fa-file" style="color:rgb(203, 9, 164)"></i>
+                      </a>
+                      <a href="https://github.com/AI4Bharat/ELAICHI" target="_blank">
+                          <i class="fab fa-github" style="color:rgb(203, 9, 164)"></i>
+                      </a>
+                    </div>
+
+                    <!-- Abstract Content -->
+                    <div class="abstract hidden" id="abstract-content" style="display: none;">
+                      <p style="font-size: 12px;">
+                          Recent advancements in Text-to-Speech (TTS) technology have led to natural-sounding speech for English, primarily due to the availability of large-scale, high-quality web data. However, many other languages lack access to such resources, relying instead on limited studio-quality data. This scarcity results in synthesized speech that often suffers from intelligibility issues, particularly with low-frequency character bigrams. In this paper, we propose three solutions to address this challenge. First, we leverage high-quality data from linguistically or geographically related languages to improve TTS for the target language. Second, we utilize low-quality Automatic Speech Recognition (ASR) data recorded in non-studio environments, which is refined using denoising and speech enhancement models. Third, we apply knowledge distillation from large-scale models using synthetic data to generate more robust outputs. Our experiments with Hindi demonstrate significant reductions in intelligibility issues, as validated by human evaluators. We propose this methodology as a viable alternative for languages with limited access to high-quality data, enabling them to collectively benefit from shared resources.
+                      </p>
+                    </div>
+
+                    <!-- JavaScript to Toggle Abstract Display -->
+                    <script>
+                    function toggleAbstract3() {
+                      var abstract = document.getElementById("abstract-content");
+                      if (abstract.style.display === "none") {
+                          abstract.style.display = "block";
+                      } else {
+                          abstract.style.display = "none";
+                      }
+                    }
+                    </script>
+
                   
                   <script>
                     document.getElementById('abstract-button').addEventListener('click', function() {
@@ -178,11 +194,9 @@
                       abstractContent.classList.toggle('hidden');
                     });
                   </script>
-                                  </div>
+                </div>
               </li>
-
-
-</ol>
+        </ol>
           <h2 class="year">2024</h2>
           <ol class="bibliography">
 
@@ -201,20 +215,42 @@
                       Ashwin Sankar, Srija Anand, Praveen Srinivasa Varadhan, Sherry Thomas, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Shridhar Kumar, Deovrat Mehendale, Aditi Krishana, Giri Raju, Mitesh Khapra
                     </font>
                   </div>
+                  <!-- Links with Abstract Badge -->
                   <div class="links abbr">
-                    <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                      href="https://arxiv.org/abs/2409.05356" target="_blank" style="color:rgb(203, 9, 164)"><i class="fas fa-file"></i></a> <a
-                      href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank" style="color:rgb(203, 9, 164)"><i class="fab fa-github"></i></a>
+                    <a class="abstract badge" role="button" onclick="toggleAbstract4()">
+                        <span style="color:rgb(203, 9, 164)">Abstract</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2409.05356" target="_blank" style="color:rgb(203, 9, 164)">
+                        <i class="fas fa-file"></i>
+                    </a>
+                    <a href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank" style="color:rgb(203, 9, 164)">
+                        <i class="fab fa-github"></i>
+                    </a>
                   </div>
 
-                  <div class="abstract hidden">
-                    <p style="font-size: 12px;">Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with extensive web data produce highly natural-sounding output. However, such data is scarce for Indian languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural conversations collected in low-quality environments to generate high-quality TTS training data. Our pipeline leverages the cross-lingual generalization of denoising and speech enhancement models trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, which we improve by fine-tuning the model on our data containing diverse set of speakers across language families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
+                  <!-- Abstract Content -->
+                  <div class="abstract hidden" id="abstract-content-2" style="display: none;">
+                    <p style="font-size: 12px;">
+                        Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with extensive web data produce highly natural-sounding output. However, such data is scarce for Indian languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural conversations collected in low-quality environments to generate high-quality TTS training data. Our pipeline leverages the cross-lingual generalization of denoising and speech enhancement models trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, which we improve by fine-tuning the model on our data containing diverse set of speakers across language families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
                     </p>
                   </div>
+
+                  <!-- JavaScript to Toggle Abstract Display -->
+                  <script>
+                  function toggleAbstract4() {
+                    var abstract = document.getElementById("abstract-content-2");
+                    if (abstract.style.display === "none") {
+                        abstract.style.display = "block";
+                    } else {
+                        abstract.style.display = "none";
+                    }
+                  }
+                  </script>
+
                 </div>
             </li>
-</ol>
-            <h2 class="year">2022</h2>
+        </ol>
+        <h2 class="year">2022</h2>
           <ol class="bibliography">
 
             <li>
@@ -232,14 +268,34 @@
                       <span style="color:rgb(203, 9, 164)">Mehak Singal</span>
                     </font>
                   </div>
+                  <!-- Links with Abstract Badge -->
                   <div class="links abbr">
-                    <a class="abstract badge" role="button"><span style="color:rgb(203, 9, 164)">Abstract</span></a> <a
-                      href="https://drive.google.com/file/d/1SqwMXGyeKeGmnJC8iCpjHjts_62EkgQf/view?usp=sharing" target="_blank" style="color:rgb(203, 9, 164)"><i class="fas fa-file"></i></a> <a
+                    <a class="abstract badge" role="button" onclick="toggleAbstract5()">
+                        <span style="color:rgb(203, 9, 164)">Abstract</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1SqwMXGyeKeGmnJC8iCpjHjts_62EkgQf/view?usp=sharing" target="_blank" style="color:rgb(203, 9, 164)">
+                        <i class="fas fa-file"></i>
+                    </a>
                   </div>
-                  <div class="abstract hidden">
-                    <p style="font-size: 12px;">Tapomania is designed for children of today`s India, keeping the traditional techniques of learning as a base for development. The multisensory approach for play was inbuilt in Traditional Indian board games where the sense of visual, touch and hearing used to be integral parts - through interaction between parts of games and players and interaction between players. These are the sensorial experience which we have tried to integrate in Tapomania. Another aspect of traditional Indian games was learning from surrounding – the objects, the colours, the geometry – most of the learning used to happen through inspiration from nature. The same concept we have tried to incorporate where children would observe the nature, surrounding, objects, shapes, relationship between shape and object and try to replicate them on the board.
+
+                  <!-- Abstract Content -->
+                  <div class="abstract hidden" id="abstract-content-3" style="display: none;">
+                    <p style="font-size: 12px;">
+                        Tapomania is designed for children of today’s India, keeping the traditional techniques of learning as a base for development. The multisensory approach for play was inbuilt in Traditional Indian board games where the sense of visual, touch, and hearing used to be integral parts—through interaction between parts of games and players and interaction between players. These are the sensorial experiences we have tried to integrate into Tapomania. Another aspect of traditional Indian games was learning from surroundings—the objects, the colors, the geometry—most learning used to happen through inspiration from nature. The same concept is incorporated here, where children observe nature, surroundings, objects, shapes, and the relationship between shape and object, and try to replicate them on the board.
                     </p>
                   </div>
+
+                  <!-- JavaScript to Toggle Abstract Display -->
+                  <script>
+                  function toggleAbstract5() {
+                    var abstract = document.getElementById("abstract-content-3");
+                    if (abstract.style.display === "none") {
+                        abstract.style.display = "block";
+                    } else {
+                        abstract.style.display = "none";
+                    }
+                  }
+                  </script>
                 </div>
             </li>
 
