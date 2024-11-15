@@ -129,11 +129,12 @@ link.parentElement.classList.add('active');
 
 // Set the active class based on the current URL on page load
 document.addEventListener('DOMContentLoaded', function() {
-const currentUrl = window.location.pathname;
+const currentUrl = window.location.pathname.replace(/\/+$/, ''); // Remove trailing slashes
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
 navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentUrl) {
+    const linkPath = link.getAttribute('href').replace(/\/+$/, ''); // Remove trailing slashes from href too
+    if (linkPath === currentUrl) {
         link.parentElement.classList.add('active');
     }
 });
