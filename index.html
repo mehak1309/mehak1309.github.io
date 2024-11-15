@@ -72,49 +72,74 @@
 
         </div>
 
-        <!-- Navbar Toogle -->
-        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse text-right" id="navbarNav">
-          <ul class="navbar-nav ml-auto flex-nowrap">
-            <!-- About -->
-            <!-- Navigation Links -->
+  <!-- Navbar Toggle -->
+<button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar top-bar"></span>
+<span class="icon-bar middle-bar"></span>
+<span class="icon-bar bottom-bar"></span>
+</button>
+
+<div class="collapse navbar-collapse text-right" id="navbarNav">
+<ul class="navbar-nav ml-auto flex-nowrap">
+<!-- Navigation Links -->
 <ul class="navbar-nav">
-  <li class="nav-item">
-      <a class="nav-link" href="/mehak" onclick="setActive(this)">
-          about
-          <span class="sr-only">(current)</span>
-      </a>
-  </li>
-  <li class="nav-item">
-      <a class="nav-link" href="/mehak/publications/" onclick="setActive(this)">
-          publications
-      </a>
-  </li>
-  <li class="nav-item">
-      <a class="nav-link" href="/mehak/mehak-singal-resume.pdf" onclick="setActive(this)">
-          resume
-      </a>
-  </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/mehak" onclick="setActive(this)">
+            about
+            <span class="sr-only">(current)</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/mehak/publications/" onclick="setActive(this)">
+            publications
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/mehak/mehak-singal-resume.pdf" onclick="setActive(this)">
+            resume
+        </a>
+    </li>
 </ul>
+</ul>
+</div>
+
+<!-- Inline CSS for Active Link Styling and Hover Effect -->
+<style>
+/* Style for the active navigation link */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover {
+background-color: #e0e0e0; /* Gray background */
+color: #333; /* Darker text color */
+border-radius: 4px; /* Optional: Rounded corners */
+padding: 8px 12px; /* Optional: Padding for button effect */
+}
+</style>
 
 <!-- JavaScript for Active Class -->
 <script>
 function setActive(link) {
-  // Remove 'active' class from all nav items
-  document.querySelectorAll('.navbar-nav .nav-item').forEach(item => {
-      item.classList.remove('active');
-  });
+// Remove 'active' class from all nav items
+document.querySelectorAll('.navbar-nav .nav-item').forEach(item => {
+    item.classList.remove('active');
+});
 
-  // Add 'active' class to the parent <li> of the clicked link
-  link.parentElement.classList.add('active');
+// Add 'active' class to the parent <li> of the clicked link
+link.parentElement.classList.add('active');
 }
+
+// Optional: Set active class based on current URL on page load
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+navLinks.forEach(link => {
+    if (link.href === window.location.href) {
+        link.parentElement.classList.add('active');
+    }
+});
+});
 </script>
+
 
 
 
