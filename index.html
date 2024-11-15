@@ -87,7 +87,7 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <li class="nav-item">
     <a class="nav-link" href="/mehak" onclick="setActive(this)">
         about
-        <!-- <span class="sr-only">(current)</span> -->
+        <span class="sr-only">(current)</span>
     </a>
 </li>
 <li class="nav-item">
@@ -106,12 +106,24 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <!-- Inline CSS for Active Link Styling and Hover Effect -->
 <style>
 /* Style for the active navigation link */
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-item.active .nav-link {
 background-color: #e0e0e0; /* Gray background */
 color: #333; /* Darker text color */
 border-radius: 4px; /* Optional: Rounded corners */
 padding: 8px 12px; /* Optional: Padding for button effect */
+}
+
+/* Hover effect for links */
+.navbar-nav .nav-item .nav-link:hover {
+background-color: #e0e0e0; /* Gray background */
+color: #333; /* Darker text color */
+border-radius: 4px; /* Optional: Rounded corners */
+padding: 8px 12px; /* Optional: Padding for button effect */
+}
+
+/* Prevent hover effect from applying to active link */
+.navbar-nav .nav-item.active .nav-link:hover {
+background-color: #e0e0e0 !important; /* Prevent hover from overriding active background */
 }
 </style>
 
