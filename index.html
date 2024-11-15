@@ -83,29 +83,38 @@
         <div class="collapse navbar-collapse text-right" id="navbarNav">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <!-- About -->
-            <li class="nav-item active">
-              <a class="nav-link" href="/mehak">
-                about
+            <!-- Navigation Links -->
+<ul class="navbar-nav">
+  <li class="nav-item">
+      <a class="nav-link" href="/mehak" onclick="setActive(this)">
+          about
+          <span class="sr-only">(current)</span>
+      </a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/mehak/publications/" onclick="setActive(this)">
+          publications
+      </a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/mehak/mehak-singal-resume.pdf" onclick="setActive(this)">
+          resume
+      </a>
+  </li>
+</ul>
 
-                <span class="sr-only">(current)</span>
+<!-- JavaScript for Active Class -->
+<script>
+function setActive(link) {
+  // Remove 'active' class from all nav items
+  document.querySelectorAll('.navbar-nav .nav-item').forEach(item => {
+      item.classList.remove('active');
+  });
 
-              </a>
-            </li>
-
-            <!-- Other pages -->
-
-            <li class="nav-item ">
-              <a class="nav-link" href="/mehak/publications/">
-                publications
-
-              </a>
-            </li>
-
-            <li class="nav-item ">
-              <a class="nav-link" href="/mehak/mehak-singal-resume.pdf">
-                resume
-              </a>
-            </li>
+  // Add 'active' class to the parent <li> of the clicked link
+  link.parentElement.classList.add('active');
+}
+</script>
 
 
 
@@ -230,7 +239,7 @@
                 <th scope="row abbr"> <abbr class="badge"><span style="color:#000000">May, 2023</span></abbr></th>
                 <td>
 
-                  Selected as a CCAIM Hardship Fund Scholar to attend the Cambridge Centre for AI in Medicine (CCAIM) Summer School in the UK, among 150 global scholars.                </td>
+                  Selected as a CCAIM Hardship Fund Scholar to attend the Cambridge Centre for AI in Medicine (CCAIM) Summer School in the UK!              </td>
               </tr>
 
               <tr>
