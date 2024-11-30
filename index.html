@@ -65,9 +65,9 @@
         <!-- Social Icons -->
         <div class="row ml-1 ml-sm-0">
           <span class="contact-icon text-center">
-            <a href="mailto:21f1006390@ds.study.iitm.ac.in"><i class="fas fa-envelope" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
-            <a href="https://scholar.google.com/citations?user=dgpAca8AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
-            <a href="https://github.com/mehak1309" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 2em; color: rgb(203, 9, 164);"></i></a>
+            <a href="mailto:21f1006390@ds.study.iitm.ac.in"><i class="fas fa-envelope" style="color: rgb(203, 9, 164);"></i></a>
+            <a href="https://scholar.google.com/citations?user=dgpAca8AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="color: rgb(203, 9, 164);"></i></a>
+            <a href="https://github.com/mehak1309" target="_blank" title="GitHub"><i class="fab fa-github" style="color: rgb(203, 9, 164);"></i></a>
         </span>
 
         </div>
@@ -85,23 +85,24 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <ul class="navbar-nav ml-auto flex-nowrap">
 <!-- Navigation Links -->
 <li class="nav-item">
-    <a class="nav-link" href="/mehak" onclick="setActive(this)">
+    <a class="nav-link" href="/" onclick="setActive(this)">
         about
         <span class="sr-only">(current)</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/mehak/publications/" onclick="setActive(this)">
+    <a class="nav-link" href="/
+    publications/" onclick="setActive(this)">
         publications
     </a>
 </li>
 <!-- <li class="nav-item">
-  <a class="nav-link" href="/mehak/projects/" onclick="setActive(this)">
+  <a class="nav-link" href="/projects/" onclick="setActive(this)">
       projects
   </a>
 </li> -->
 <li class="nav-item">
-    <a class="nav-link" href="/mehak/mehak-singal-resume.pdf" onclick="setActive(this)">
+    <a class="nav-link" href="/mehak-singal-resume.pdf" onclick="setActive(this)">
         resume
     </a>
 </li>
@@ -324,145 +325,6 @@ navLinks.forEach(link => {
             </table>
           </div>
 <br>
-          <article>
-            <div class="publications">
-              <h2>selected papers</h2>
-              <ol class="bibliography">
-
-                <li>
-                  <div class="row">
-
-                    <div class="col-sm-2 abbr">
-                      <abbr class="badge" style="background-color: rgb(203, 9, 164);">NAACL'25</abbr>
-                  </div>
-                  
-
-                    <div id="doddapaneni2024finding" class="col-sm-8">
-                      <div class="title"><b>ELAICHI: Enhancing Low-resource TTS by Addressing Infrequent and Low-frequency Character Bigrams</b>
-                      </div>
-                      <div class="author">
-                        <font size="-1">
-                          Srija Anand, Praveen Srinivasa Varadhan, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Mitesh M. Khapra
-                        </font>
-                      </div>
-<!-- Links with Abstract Badge -->
-<div class="links abbr">
-  <a class="abstract badge" role="button" onclick="toggleAbstract()">
-      <span style="color:rgb(203, 9, 164)">Abstract</span>
-  </a>
-  <a href="https://arxiv.org/abs/2410.17901" target="_blank" style="color:rgb(203, 9, 164)">
-      <i class="fas fa-file"></i>
-  </a>
-  <a href="https://github.com/AI4Bharat/ELAICHI" target="_blank" style="color:rgb(203, 9, 164)">
-      <i class="fab fa-github"></i>
-  </a>
-</div>
-
-<!-- Abstract Content -->
-<div class="abstract hidden" id="abstract-text" style="display: none;">
-  <p style="font-size: 12px;">
-      Recent advancements in Text-to-Speech (TTS) technology have led to natural-sounding speech for English, primarily due to the availability of large-scale, high-quality web data. However, many other languages lack access to such resources, relying instead on limited studio-quality data. This scarcity results in synthesized speech that often suffers from intelligibility issues, particularly with low-frequency character bigrams. In this paper, we propose three solutions to address this challenge. First, we leverage high-quality data from linguistically or geographically related languages to improve TTS for the target language. Second, we utilize low-quality Automatic Speech Recognition (ASR) data recorded in non-studio environments, which is refined using denoising and speech enhancement models. Third, we apply knowledge distillation from large-scale models using synthetic data to generate more robust outputs. Our experiments with Hindi demonstrate significant reductions in intelligibility issues, as validated by human evaluators. We propose this methodology as a viable alternative for languages with limited access to high-quality data, enabling them to collectively benefit from shared resources.
-  </p>
-</div>
-
-<!-- JavaScript to Toggle Abstract Display -->
-<script>
-function toggleAbstract() {
-  var abstract = document.getElementById("abstract-text");
-  if (abstract.style.display === "none") {
-      abstract.style.display = "block";
-  } else {
-      abstract.style.display = "none";
-  }
-}
-</script>
-                  </div>
-                  <br> <br>
-                </li>
-
-                <li>
-                  <div class="row">
-
-                    <div class="col-sm-2 abbr">
-                      <abbr class="badge" style="background-color: rgb(203, 9, 164);">NeurIPS'24</abbr>
-                    </div>
-
-                    <div id="doddapaneni2024finding" class="col-sm-8">
-                      <div class="title"><b>IndicVoices-R: Unlocking a Massive Multilingual Multi-speaker Speech Corpus for Scaling Indian TTS</b>
-                      </div>
-                      <div class="author">
-                        <font size="-1">
-                          Ashwin Sankar, Srija Anand, Praveen Srinivasa Varadhan, Sherry Thomas, <span style="color:rgb(203, 9, 164)">Mehak Singal</span>, Shridhar Kumar, Deovrat Mehendale, Aditi Krishana, Giri Raju, Mitesh M. Khapra
-                        </font>
-                      </div>
-                      <div class="links abbr">
-                        <!-- Links with Abstract Badge -->
-<div class="links abbr">
-  <a class="abstract badge" role="button" onclick="toggleAbstract2()">
-      <span style="color:rgb(203, 9, 164)">Abstract</span>
-  </a>
-  <a href="https://arxiv.org/abs/2409.05356" target="_blank">
-      <i class="fas fa-file" style="color:rgb(203, 9, 164)"></i>
-  </a>
-  <a href="https://github.com/AI4Bharat/IndicVoices-R" target="_blank">
-      <i class="fab fa-github" style="color:rgb(203, 9, 164)"></i>
-  </a>
-</div>
-
-<!-- Abstract Content -->
-<div class="abstract hidden" id="abstract-text-2" style="display: none;">
-  <p style="font-size: 12px;">
-      Recent advancements in text-to-speech (TTS) synthesis show that large-scale models trained with 
-      extensive web data produce highly natural-sounding output. However, such data is scarce for Indian 
-      languages due to the lack of high-quality, manually subtitled data on platforms like LibriVox or 
-      YouTube. To address this gap, we enhance existing large-scale ASR datasets containing natural 
-      conversations collected in low-quality environments to generate high-quality TTS training data. Our 
-      pipeline leverages the cross-lingual generalization of denoising and speech enhancement models 
-      trained on English and applied to Indian languages. This results in IndicVoices-R (IV-R), the largest 
-      multilingual Indian TTS dataset derived from an ASR dataset, with 1,704 hours of high-quality speech 
-      from 10,496 speakers across 22 Indian languages. IV-R matches the quality of gold-standard TTS datasets 
-      like LJSpeech, LibriTTS, and IndicTTS. We also introduce the IV-R Benchmark, the first to assess 
-      zero-shot, few-shot, and many-shot speaker generalization capabilities of TTS models on Indian voices, 
-      ensuring diversity in age, gender, and style. We demonstrate that fine-tuning an English pre-trained 
-      model on a combined dataset of high-quality IndicTTS and our IV-R dataset results in better zero-shot 
-      speaker generalization compared to fine-tuning on the IndicTTS dataset alone. Further, our evaluation 
-      reveals limited zero-shot generalization for Indian voices in TTS models trained on prior datasets, 
-      which we improve by fine-tuning the model on our data containing diverse set of speakers across language 
-      families. We open-source all data and code, releasing the first TTS model for all 22 official Indian languages.
-  </p>
-</div>
-
-<!-- JavaScript to Toggle Abstract Display -->
-<script>
-function toggleAbstract2() {
-  var abstract = document.getElementById("abstract-text-2");
-  if (abstract.style.display === "none") {
-      abstract.style.display = "block";
-  } else {
-      abstract.style.display = "none";
-  }
-}
-</script>
-
-                    </div>
-                </li>
-
-              </ol>
-
-            </div>
-          </article>
-
-          <!-- <article>
-            <div class="flags">
-              <h2>flags</h2>
-              Conferences and internships took me here 🇮🇪 🇦🇪 🇺🇸 🇨🇦 🇸🇬 🇹🇭 (so far)!
-            </div>
-          </article> -->
-        </div>
-
-
-      </article>
-
     </div>
 
   </div>
